@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/styles/ViewStyles.sass";
 
 import FeatureList from "../components/edit/FeatureList";
+import EditBox from "../components/edit/EditBox";
 
 class Edit extends React.Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class Edit extends React.Component {
       <div className="content">
         <div className="feature-section">
           <FeatureList handleClick={this.toggleViews.bind(this)} />
+          <EditBox props={this.state} />
         </div>
       </div>
     );
