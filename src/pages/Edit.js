@@ -27,7 +27,6 @@ class Edit extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="content">
         <div className="feature-section">
